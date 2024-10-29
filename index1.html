@@ -1,0 +1,627 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TOURJILO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- Favicon -->
+    <link href="img/LO.jpeg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+background: repeating-linear-gradient(45deg, rgb(126, 97, 243), rgb(243, 111, 241) 10%, rgb(147, 216, 234) 20%);
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    color: #151201;
+ 
+  
+        }
+
+        .topbar {
+            background-color: #f8f9fa;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .topbar .social-link {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .nav-bar {
+            position: relative;
+            padding: 0;
+            z-index: 9;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+        }
+
+        .navbar-brand h1 {
+            color: #007bff;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .navbar-brand span {
+            color: #212529;
+            font-weight: 400;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #212529;
+            font-weight: 500;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .carousel-caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            max-width: 700px;
+        }
+
+        .carousel-caption h1 {
+            font-size: 50px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .carousel-caption p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .carousel-caption .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item .icon {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature-item p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .team-item {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .team-item .team-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-item .team-img img {
+            width: 100%;
+            height: auto;
+            transition: all 0.3s ease;
+        }
+
+        .team-item:hover .team-img img {
+            transform: scale(1.1);
+        }
+
+        .team-item .team-info {
+            position: absolute;
+            bottom: -60px;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .team-item:hover .team-info {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        .team-item .team-info h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .team-item .team-info p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .contact-form .form-control {
+            border-radius: 5px;
+            height: 50px;
+        }
+
+        .contact-form .btn {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-item .icon {
+            font-size: 24px;
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .contact-info-item p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .footer .footer-logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .footer .social-links a {
+            color: #007bff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 40px;
+            transition: background 0.3s;
+            z-index: 11;
+        }
+
+        .back-to-top i {
+            font-size: 24px;
+        }
+
+        .back-to-top:hover {
+            background: #009bff;
+            color: #fff;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-nav .nav-item .nav-link {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .carousel-caption h1 {
+                font-size: 40px;
+            }
+
+            .carousel-caption p {
+                font-size: 18px;
+            }
+
+            .feature-item h3 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .navbar-brand h1 {
+                font-size: 24px;
+            }
+
+            .navbar-brand span {
+                font-size: 16px;
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                font-size: 14px;
+            }
+
+            .carousel-caption h1 {
+                font-size: 30px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+            }
+
+            .feature-item h3 {
+                font-size: 18px;
+            }
+
+            .footer .footer-logo {
+                font-size: 20px;
+            }
+
+            .footer p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <body style="background-color:#70b7e0;">
+    </body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>tourjilo@mexico.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>012 375 6789</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="https://www.facebook.com/profile.php?id=100079439357212&mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="https://twitter.com/TourJilomx">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+               
+                        <a class="text-primary px-3" href="https://instagram.com/tourjilomx4?igshid=MzNlNGNkZWQ4Mg==">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="https://www.youtube.com/@TourJilo">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TOUR</span>JILO</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index1.html" class="nav item nav-link acyive">HOME</a>
+                        <a href="about (1).html" class="nav item nav-link acyvive">GALERIA</a>
+                        <a href="service (1).html" class="nav-item nav-link">SERVICIOS</a>
+                        <a href="lugares.html" class="nav-item nav-link">LUGARES</a>
+                        <a href="contact.html" class="nav-item nav-link">CONTACTOS</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">BLOG</a>
+                                <a href="single.html" class="dropdown-item">DESTINOS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/fndo.jpg"alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 700px;">
+                            <h4 class="text-white text-uppercase mb-md-3">TOURS & VISITAS</h4>
+                            <h1 class="display-3 text-white mb-md-4"></h1>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/fndo.jpg"alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 500px;">
+                            <h4 class="text-white text-uppercase mb-md-3">TOURS & VISITAS</h4>
+                            <h1 class="display-3 text-white mb-md-4">"Descubre la belleza natural y cultural de Jilotepec: tu próximo destino de aventura y diversión."</h1>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 50px; height: 50px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 50px; height: 50px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+    <!-- Feature Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Excelentes precios</h5>
+                            <p class="m-0">los precios son lo mejor accesibles para ti</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-award text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">El mejor Servicio</h5>
+                            <p class="m-0">En esta empresa te brindamos los mejores servicios y con la mayor atencion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-globe text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Cobertura de algunos lugares del municipio</h5>
+                            <p class="m-0">Ofrecemos los lugares mas preferidos por la gente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Destination Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">DESTINO</h6>
+                <h1>JIlOTEPEC MÉXICO</h1>
+          </div>
+          </div>
+            </div>
+              <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/IMG.jpg" alt="image">
+                        <a class="destination-overlay text-white text-decoration-none" href="lugares.html">
+                            <h5 class="text-black">JILOTEPEC</h5>
+                            <span>Sitios Turísticos</span>
+                        </a>
+                    </div>
+                    
+<!-- Destination End -->
+
+    <!-- Servicios Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h6>
+                <h1>Tours & Visitas/ Servicios</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <h5 class="mb-2">Guia turistico</h5>
+                        <p class="m-0">Te brindamos guias elejidos por expertos, garantizandote una buena experiencia y entendimiento de tu visita</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">Transportes</h5>
+                        <p class="m-0">Te ofrecemos transportes seguros y confiables</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">información en la pagina sobre las locaciones</h5>
+                        <p class="m-0">te brindamos en esta página información sobre las locaciones que manejamos para ayudarte en la toma de la desicion para elegir tu próximo destino</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+    <!-- Servicios End -->
+
+   
+
+    <!-- Testimonial Start -->
+            <div class="owl-carousel testimonial-carousel">
+                <div class="text-center pb-4">
+                    <img class="img-fluid mx-auto" src="img/ft3.avif" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Nuestro experimentado fotógrafo de paisajes, capturará la belleza de Jilotepec a través de su lente, inmortalizando tus recuerdos de una manera única y artística.
+                        </p>
+                        <h5 class="text-truncate">Pedro</h5>
+                        <span>FOTOGRAFO</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/ft2.jpg" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Nuestra talentosa guía turística, te llevará en un viaje fascinante por los encantos de Jilotepec, compartiendo historias y secretos locales que te sorprenderán.
+                        </p>
+                        <h5 class="text-truncate">Maria</h5>
+                        <span>GUIA TURISTICA</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/ft4.jpg" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Nuestro talentoso diseñador web, crea una experiencia visualmente atractiva y fácil de navegar en nuestra página web de guía turística de Jilotepec, asegurando que encuentres toda la información necesaria.
+                        </p>
+                        <h5 class="text-truncate">Carlos</h5>
+                        <span>DISEÑADOR WEB</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid mx-auto" src="img/ft.jpg" style="width: 100px; height: 100px;" >
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Nuestro apasionado escritor de contenidos, te sumergirá en la riqueza cultural de Jilotepec a través de sus cautivadoras narrativas y artículos informativos en la página web.
+                        </p>
+                        <h5 class="text-truncate">Juan</h5>
+                        <span>ESCRITOR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand">
+                        <h1 class="text-primary"><span class="text-white">TOUR</span>JILO</h1>
+                    </a>
+                    <p> </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>No.123 JILOTEPEC, MX</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope mr-2"></i>tourjilo@mexico.com</p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="row">
+                <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0 text-white-50">Copyright &copy; <a href="#">TOURJILO</a>. All Rights Reserved.</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center text-md-right">
+                    <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
