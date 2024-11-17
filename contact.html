@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developed by Orson.io team" name="author">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="C:\Users\52553\Desktop\PAG\savory10\assets\images\wonder 7.png" />
+
+  <!-- Disable tap highlight on IE -->
+  <link href="img/wonder 7.png" rel="icon">
+  <title>THE 7 WONDERS OF THE WORLD</title>
+
+  <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>WONDER 7</title>
+
+  <link href="./main.82cfd66e.css" rel="stylesheet">
+  <style>
+    /* Styles for the body */
+    body {
+      font-family: Kristen ITC;
+      padding: 20px;
+      background: url("images - copia/colr.jpg") no-repeat center center fixed;
+    }
+
+    /* Styles for the header */
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      
+    }
+
+    .site-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .site-header a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .site-header p {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    /* Styles for the navigation bar */
+    .navbar {
+      background-color: #d00a56;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Styles for the form */
+    form {
+      width: 400px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: formAnimation 1s ease-in-out;
+      
+    }
+
+    @keyframes formAnimation {
+      0% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #d1bd07;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #12a1b8;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #c6db0a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="site-header">
+      <a class="site-brand" href="./index.html" title="">
+        <center><img class="img-responsive site-logo" alt="" src="images - copia/wonder 7.gif" width="150" height="150"></center><br>
+        <em style="text-align:center;">THE 7 WONDERS OF THE WORLD</em>
+      </a>
+      <p>
+        "The 7 Wonders of the World: Discover the Magic of the Past, the Admiration of the Present, and the Inspiration of the Future"
+      </p>
+    </div>
+    <div class="navbar">
+      <a href="./index.html">MAIN MENU</a>
+      <a href="./components.html">HOME</a>
+      <a href="./about.html">ABOUT</a>
+      <a href="./contact.html">CONTACT</a>
+    </div>
+  </header>
+
+  <main id="main-collapse">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="section-container-spacer">
+          <h1 style="text-align: center;">CONTACTS AND REGISTRATION</h1>
+          <p style="text-align: center;">Hello, here you can register on my page<br>Continue enjoying your stay</p>
+        </div>
+
+
+        <div style="text-align: center;">
+        <form action="cone.php" method="post">
+          <label for="usuario">Username:</label>
+          <input type="text" id="usuario" name="usuario" required>
+
+          <label for="telefono">Phone:</label>
+          <input type="text" id="telefono" name="telefono" required>
+
+          <label for="contrasena">Email:</label>
+          <input type="text" id="correo" name="correo" required>
+
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p style="text-align:center;">
+        © 2023 The 7 Wonders of the World. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
