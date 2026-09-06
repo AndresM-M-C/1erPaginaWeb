@@ -14,10 +14,8 @@
   "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.4.1",
-    "mysql2": "^3.22.5"
+    "mongoose": "^9.4.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
