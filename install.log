@@ -1,0 +1,11 @@
+[10:52:13 2026-09-18] FETCHING Version 2.45.1
+[10:52:13 2026-09-18] CREATING /home/manuelm/.spicetify
+[10:52:13 2026-09-18] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.45.1/spicetify-2.45.1-linux-amd64.tar.gz
+[10:52:22 2026-09-18] EXTRACTING /home/manuelm/.spicetify/spicetify.tar.gz
+[10:52:22 2026-09-18] SETTING EXECUTABLE PERMISSIONS TO /home/manuelm/.spicetify/spicetify
+[10:52:22 2026-09-18] REMOVING /home/manuelm/.spicetify/spicetify.tar.gz
+[10:52:22 2026-09-18] APPENDING /home/manuelm/.spicetify to PATH in /home/manuelm/.config/fish/config.fish
+[10:52:22 2026-09-18] spicetify v2.45.1 was installed successfully to /home/manuelm/.spicetify
+[10:52:22 2026-09-18] Open a new terminal or reload your shell profile to use spicetify:
+[10:52:22 2026-09-18]   source "/home/manuelm/.config/fish/config.fish"
+[10:52:22 2026-09-18] Then run 'spicetify --help' to get started
